@@ -1,0 +1,78 @@
+{
+  "name": "projeto-ai-pede",
+  "version": "0.0.1",
+  "author": "Ionic Framework",
+  "homepage": "https://ionicframework.com/",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "ionic": "ionic",
+    "build": "ng build",
+    "cordova:build": "npm run build && cordova build android",
+    "test": "ng test",
+    "lint": "eslint .",
+    "e2e": "ng e2e"
+  },
+  "private": true,
+  "engines": {
+    "node": "24.19.0",
+    "npm": "11.17.0"
+  },
+  "dependencies": {
+    "@angular/common": "22.1.5",
+    "@angular/core": "22.1.5",
+    "@angular/forms": "22.1.5",
+    "@angular/platform-browser": "22.1.5",
+    "@angular/platform-browser-dynamic": "22.1.5",
+    "@angular/router": "22.1.5",
+    "@awesome-cordova-plugins/core": "9.5.0",
+    "@awesome-cordova-plugins/geolocation": "9.5.0",
+    "@awesome-cordova-plugins/status-bar": "9.5.0",
+    "@ionic/angular": "9.0.2",
+    "@ionic/storage-angular": "4.0.0",
+    "cordova-android": "15.1.0",
+    "cordova-plugin-device": "^3.0.0",
+    "cordova-plugin-ionic-keyboard": "^2.2.0",
+    "cordova-plugin-ionic-webview": "^5.0.1",
+    "cordova-plugin-statusbar": "^4.0.0",
+    "rxjs": "7.8.2",
+    "zone.js": "0.16.3"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "22.1.7",
+    "@angular/cli": "22.1.7",
+    "@angular/compiler": "22.1.5",
+    "@angular/compiler-cli": "22.1.5",
+    "@angular/language-service": "22.1.5",
+    "@ionic/cli": "7.2.1",
+    "@types/jasmine": "~5.1.0",
+    "@types/jasminewd2": "~2.0.13",
+    "@types/node": "^24.0.0",
+    "angular-eslint": "^22.2.0",
+    "eslint": "^9.35.0",
+    "jasmine-core": "~5.8.0",
+    "jasmine-spec-reporter": "~7.0.0",
+    "karma": "^6.4.4",
+    "karma-chrome-launcher": "^3.2.0",
+    "karma-coverage": "^2.2.1",
+    "karma-jasmine": "^5.1.0",
+    "karma-jasmine-html-reporter": "^2.1.0",
+    "cordova": "13.0.0",
+    "typescript": "~6.0.0",
+    "typescript-eslint": "^8.69.0"
+  },
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-ionic-webview": {
+        "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "28.+"
+      },
+      "cordova-plugin-ionic-keyboard": {}
+    },
+    "platforms": [
+      "android"
+    ]
+  }
+}

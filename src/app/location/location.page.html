@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Padarias próximas</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-spinner *ngIf="isLoading" name="crescent"></ion-spinner>
+  <ion-text color="danger" *ngIf="errorMessage">
+    <p>{{errorMessage}}</p>
+  </ion-text>
+  <div id="map" [hidden]="isLoading || errorMessage"></div>
+</ion-content>

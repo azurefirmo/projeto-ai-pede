@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ai Pede
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-spinner *ngIf="isLoading" name="crescent"></ion-spinner>
+
+  <ion-text color="danger" *ngIf="errorMessage">
+    <p class="ion-padding">{{errorMessage}}</p>
+  </ion-text>
+
+  <ion-text color="medium" *ngIf="!isLoading && !errorMessage && listBakery.length === 0">
+    <p class="ion-padding">Nenhuma padaria encontrada.</p>
+  </ion-text>
+
+  <ion-card *ngFor="let bakery of listBakery" (click)="bakeryMenu(bakery.id)">
+    <ion-item>
+      <ion-avatar slot="start">
+        <img [src]="bakery.img" [alt]="bakery.title">
+      </ion-avatar>
+      <h2>{{bakery.id}}</h2>
+      <p>{{bakery.title}}</p>
+    </ion-item>
+      
+    <img [src]="bakery.img" [alt]="bakery.title">
+      
+    <ion-card-content>
+      <p>{{bakery.description}}</p>
+    </ion-card-content>
+      
+    <ion-row>
+      <ion-col>
+        <ion-button color="primary" fill="clear" size="small">
+        <ion-icon name='thumbs-up'></ion-icon>
+        {{bakery.likes_count}} Likes
+      </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button color="primary" fill="clear" size="small">
+        <ion-icon name='text'></ion-icon>
+        {{bakery.comments_count}} Comments
+      </ion-button>
+      </ion-col>
+      <ion-col center text-center>
+        <ion-note>
+          {{bakery.createdAt}}
+        </ion-note>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+</ion-content>
