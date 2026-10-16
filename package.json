@@ -24,7 +24,7 @@
     "@angular/forms": "22.1.5",
     "@angular/platform-browser": "22.1.5",
     "@angular/platform-browser-dynamic": "22.1.5",
-    "@angular/router": "22.1.5",
+    "@angular/router": "22.2.1",
     "@awesome-cordova-plugins/core": "9.5.0",
     "@awesome-cordova-plugins/geolocation": "9.5.0",
     "@awesome-cordova-plugins/status-bar": "9.5.0",
